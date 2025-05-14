@@ -1,0 +1,375 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+ 
+}
+body{
+  width: 90vw;
+  margin: 4rem;
+  border: 1px solid#333;
+  box-shadow: 1px 1px 9px rgb(23,25, 26);
+  min-height: 100vh;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow-x: hidden;
+}
+.header{
+  height: 100vh;
+}
+li{
+  list-style: none;
+}
+.navbar{
+  display:flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.logo{
+  font-size: 1.6rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
+  font-weight: 600;
+}
+.elements ul li{
+  display: inline-block;
+  margin-right: 2.5rem;
+}
+.elements ul li a{
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+.elements ul li:hover,
+.elements ul li:active{
+  border-bottom: 2px solid #868787;
+  transition: all .1s ease-in-out;
+}
+.button{
+  margin-right: 3rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.mainimage{
+  position: relative;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+}
+.mainimage img{
+  width:95%;
+  height:90vh;
+  position: absolute;
+  border-radius: 2rem;
+}
+.imgtext{
+  position: absolute;
+  top: 19px;
+  left: 120px;
+}
+.imgtext h4{
+  font-size: 4rem;
+  color: #fff;
+  line-height: 1.2;
+  word-spacing: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  animation: colorchange 5s infinite;
+}
+@keyframes colorchange {
+  0%{color: #fff;}
+  25%{color: #52e5ff;}
+  50%{color: #87cefa;}
+  75%{color: #00ced1;}
+  100%{color: #fff;}
+}
+.imgtext h5{
+  color: #fff;
+  opacity: .6;
+  margin-bottom: 1rem;
+  font-style: oblique;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  word-spacing: .2rem;
+}
+
+.book{
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 11rem;
+  border: none;
+  margin-top: 2rem;
+  color: #333;
+}
+.book:hover,
+.book:active{
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+}
+.movebars button{
+  padding: .5rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  border: none;
+  margin-top: 9rem;
+  margin-right: .5rem;
+  color: #333;
+  background-color: #fff;
+}
+.movebars button:hover,
+.movebars button:active{
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+}
+.value{
+  text-align: center;
+  margin-top: 2rem;
+}
+.value h2{
+  font-size: 3rem;
+  margin-bottom: .5rem;
+  font-style: oblique;
+}
+.value h3{
+  font-size: 1rem;
+  opacity: .6;
+}
+.items{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.one{
+  margin-left: 1rem;
+}
+.one, .two, .three, .four{
+  margin-right: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+  border: 1px solid#333;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 1px 1px 4px #767676;
+}
+.icon i{
+  font-size: 2rem;
+  margin-bottom: .7rem;
+}
+.name{
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: .3rem;
+  line-height: 1.2;
+}
+.meaning{
+  opacity: .8;
+  margin-bottom: 3rem;
+}
+.choose{
+  margin-left: 1.5rem;
+  letter-spacing:2px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
+}
+.hints{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pics{
+  border: 1px solid rgb(179, 179, 179) ;
+  margin: 1.5rem;
+  border-radius: 1rem;
+  height: 365px;
+  box-shadow: 1px 1px 4px #767676;
+  justify-content: space-around;
+}
+.picture img{
+  width: 100%;
+  height: 280px;
+  border: none;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.style{
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: .3rem;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.describe{
+  padding: 1rem;
+}
+span{
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.move{
+ margin-right: 1.3rem; 
+ border: 1px solid#333;
+ border-radius: 50%;
+ height: 2rem;
+ width: 2rem;
+ align-self: center;
+ background-color: #fff;
+ color: #333;
+}
+.move:hover,
+.move:active{
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+}
+.seeall {
+  text-align: center;
+}
+.seeall button{
+  margin: 3rem 0;
+  border: 1px solid #333;
+  padding: 1rem;
+  width: 155px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  border-radius: 1rem;
+}
+.seeall button:hover,
+.seeall button:active{
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.2);
+  transition: all .3s ease-in-out;
+}
+@media (max-width:981px) and (min-width:768px) {
+  .one, .two, .three, .four{
+    width: 25rem;
+    height: 11rem;
+  }
+  .hints{
+    flex-wrap: wrap;
+  }
+  .movebars button{
+    margin-top: 8rem;
+   }
+   .imgtext{
+    left: 50px;
+   }
+   .movebars button{
+    margin-top: 3rem;
+   }
+}
+@media (max-width: 768px) {
+ .hints{
+  flex-wrap: wrap;
+  flex-direction: column;
+ }
+ .items{
+  flex-wrap: wrap;
+  flex-direction: column;
+ }
+ .icon, .name, .meaning{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+ }
+ .imgtext{
+  left: 50px;
+ }
+ .movebars button{
+  margin-top: 3rem;
+ }
+}
+@media (max-width: 699px) {
+ .elements{
+  display: none;
+ }
+ 
+}
+@media (max-width: 654px) {
+  .imgtext h4{
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 571px) {
+  body{
+    width: 85vw;
+    margin: 4rem;
+    border: none;
+    min-height: 100vh;
+    border: 1px solid#333;
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+  }
+  .header{
+    height: 90vh;
+  }
+  .main{
+    margin: 1rem;
+  }
+  .mainimage{
+    position: relative;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+  }
+  .mainimage img{
+    width:95%;
+    height:90vh;
+    position: absolute;
+    border-radius: 2rem;
+  }
+  .imgtext h4{
+    font-size: 3rem;
+  }
+  .movebars button{
+    margin-top: 7rem;
+  }
+  .value{
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 499px) {
+  .movebars button{
+    margin-top: 3rem;
+  }
+  .imgtext{
+    left: 19px;
+  }
+  .imgtext h4{
+    font-size: 1.9rem;
+  }
+  .imgtext h5{
+    width: 31ch;
+  }
+  .one, .two, .three, .four{
+    margin-right: .2rem;
+  }
+}
+@media (max-width: 355px){
+  .imgtext h4{
+    font-size: 1.5rem;
+  }
+}
